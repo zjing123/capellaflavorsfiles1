@@ -1,0 +1,7 @@
+#truncate table
+truncate table sales_refunded_aggregated;
+truncate table sales_refunded_aggregated_order;
+
+#insert into
+insert into sales_refunded_aggregated select * from magento2_capellaflavors_prod.sales_refunded_aggregated;
+insert into sales_refunded_aggregated_order select * from magento2_capellaflavors_prod.sales_refunded_aggregated_order;

@@ -1,0 +1,14 @@
+#truncate table
+truncate table sales_payment_transaction;
+truncate table vault_payment_token;
+truncate table vault_payment_token_order_payment_link;
+truncate table klarna_payments_quote;
+truncate table paypal_payment_transaction;
+
+#insert into
+insert into sales_payment_transaction select * from magento2_capellaflavors_prod.sales_payment_transaction;
+insert into vault_payment_token select * from magento2_capellaflavors_prod.vault_payment_token;
+insert into vault_payment_token_order_payment_link select * from magento2_capellaflavors_prod.vault_payment_token_order_payment_link;
+insert into klarna_payments_quote select * from magento2_capellaflavors_prod.klarna_payments_quote;
+insert into paypal_payment_transaction select * from magento2_capellaflavors_prod.paypal_payment_transaction;
+
